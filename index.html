@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Botones CGI</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1>Búsqueda de datos con MariaDB</h1>
+    <div>
+        <form action="/cgi-bin/id5.pl" method="post">
+            <button type="submit">Actor con id igual a 5</button>
+        </form>
+        <form action="/cgi-bin/peliculas1985.pl" method="post">
+            <button type="submit">Películas de 1985</button>
+        </form>
+        <form action="/cgi-bin/puntaje7votos5000.pl" method="post">
+            <button type="submit">Películas con puntaje mayor a 7 y más de 5000 votos</button>
+        </form>
+        <form action="/cgi-bin/pelicula_por_anio.pl" method="post">
+            <label for="year">Ingrese un año:</label>
+            <input type="text" name="year" id="year" required>
+            <button type="submit" for="year">Buscar películas por año</button>
+        </form>
+    </div>
+</body>
+</html>
